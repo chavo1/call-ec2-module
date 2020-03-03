@@ -1,6 +1,7 @@
 #ec2 aws east
 module "ec2-east" {
-  source = "git@github.com:chavo1/ec2-module.git"
+  source  = "app.terraform.io/chavo4/ec2/aws"
+  version = "0.0.1"
 
   ami = var.ami_east
 }
@@ -10,7 +11,8 @@ module "ec2-west" {
   providers = {
     aws = aws.west
   }
-  source = "git@github.com:chavo1/ec2-module.git"
+  source  = "app.terraform.io/chavo4/ec2/aws"
+  version = "0.0.1"
 
   ami = var.ami_west
 
