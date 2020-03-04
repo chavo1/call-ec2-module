@@ -12,7 +12,7 @@ module "ec2-west" {
     aws = aws.west
   }
   source  = "app.terraform.io/chavo4/ec2/aws"
-  version = "0.0.2"
+  version = "1.058.16"
 
   ami = var.ami_west
 
